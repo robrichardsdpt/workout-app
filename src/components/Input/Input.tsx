@@ -9,6 +9,6 @@ const Input = ({
   altText?: string;
   classNameArray?: string;
   onChange?: () => void;
-}) => <input alt={altText} className={classNameArray} />;
+}) => <input alt={altText} className={classNameArray} onChange={onChange} />;
 
 export default Input;
