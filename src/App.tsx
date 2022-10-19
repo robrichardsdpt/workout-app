@@ -3,10 +3,12 @@ import "./App.css";
 import Input from "./components/Input/Input";
 
 function App() {
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => console.log(e);
+
   return (
     <div className="App">
       <h1>Calculate your Percentage based off of 1RM</h1>
-      <Input />
+      <Input onChange={handleChange} />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Input = ({
 }: {
   altText?: string;
   classNameArray?: string;
-  onChange?: () => void;
+  onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
 }) => <input alt={altText} className={classNameArray} onChange={onChange} />;
 
 export default Input;
