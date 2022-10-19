@@ -3,7 +3,8 @@ import "./App.css";
 import Input from "./components/Input/Input";
 
 function App() {
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => console.log(e);
+  const handleChange = (event: { target: HTMLInputElement }) =>
+    console.log(event.target.value);
 
   return (
     <div className="App">
