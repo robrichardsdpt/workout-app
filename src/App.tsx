@@ -4,12 +4,12 @@ import Input from "./components/Input/Input";
 
 function App() {
   const handleChange = (event: { target: HTMLInputElement }) =>
-    console.log(event.target.value);
+    console.log(event.target.name, event.target.value);
 
   return (
     <div className="App">
       <h1>Calculate your Percentage based off of 1RM</h1>
-      <Input onChange={handleChange} />
+      <Input inputName="percentage" onChange={handleChange} />
     </div>
   );
 }
