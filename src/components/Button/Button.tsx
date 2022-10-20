@@ -4,9 +4,15 @@ import "./Button.styles.scss";
 const Button = ({
   className,
   children,
+  onClick,
 }: {
   className?: string;
   children: React.ReactNode;
-}) => <button className={className}>{children}</button>;
+  onClick: () => void;
+}) => (
+  <button className={className} onClick={onClick}>
+    {children}
+  </button>
+);
 
 export default Button;

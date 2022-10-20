@@ -10,10 +10,22 @@ function App() {
   return (
     <div className="App">
       <h1>Calculate your Percentage based off of 1RM</h1>
-      <Input required={true} inputName="percentage" onChange={handleChange} />
+      <Input
+        tabIndex={0}
+        required={true}
+        inputName="percentage"
+        onChange={handleChange}
+      />
       <Input required={true} inputName="weight" onChange={handleChange} />
-      <Button className="primary">Button</Button>
-      <Button className="secondary">Button</Button>
+      <Button className="primary" onClick={() => console.log("button 1 click")}>
+        Button
+      </Button>
+      <Button
+        className="secondary"
+        onClick={() => console.log("button 2 click")}
+      >
+        Button
+      </Button>
     </div>
   );
 }
