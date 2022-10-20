@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <h1>Calculate your Percentage based off of 1RM</h1>
-      <Input inputName="percentage" onChange={handleChange} />
+      <Input required={true} inputName="percentage" onChange={handleChange} />
+      <Input required={true} inputName="weight" onChange={handleChange} />
     </div>
   );
 }
