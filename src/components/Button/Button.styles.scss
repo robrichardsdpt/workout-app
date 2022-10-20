@@ -1,0 +1,24 @@
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 8px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 4px 4px 4px silver;
+  }
+  &:active {
+    box-shadow: 2px 2px 2px silver;
+  }
+}
+.primary {
+  background-color: #4c8bf5;
+  color: white;
+}
+
+.secondary {
+  background-color: tomato;
+  color: white;
+}

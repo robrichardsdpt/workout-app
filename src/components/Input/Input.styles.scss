@@ -2,10 +2,10 @@ input {
   border-radius: 10px;
   padding: 10px;
   border: 1px solid gray;
-  margin: 5px;
+  margin: 8px;
 
   &:focus {
     outline: none;
-    box-shadow: 2px 2px 2px silver;
+    box-shadow: 4px 4px 4px silver;
   }
 }
