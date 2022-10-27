@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Input from "./components/Input/Input";
 import Button from "./components/Button/Button";
+import Form from "./components/Form/Form";
 
 function App() {
   const handleChange = (event: { target: HTMLInputElement }) =>
@@ -12,19 +13,21 @@ function App() {
   return (
     <div className="App">
       <h1>Calculate your Percentage based off of 1RM</h1>
-      <Input
-        tabIndex={0}
-        required={true}
-        inputName="percentage"
-        onChange={handleChange}
-      />
-      <Input required={true} inputName="weight" onChange={handleChange} />
-      <Button className="primary" onClick={() => handleClick(1)}>
-        Button 1
-      </Button>
-      <Button className="secondary" onClick={() => handleClick(2)}>
-        Button 2
-      </Button>
+      <Form>
+        <Input
+          tabIndex={0}
+          required={true}
+          inputName="percentage"
+          onChange={handleChange}
+        />
+        <Input required={true} inputName="weight" onChange={handleChange} />
+        <Button className="primary" onClick={() => handleClick(1)}>
+          Button 1
+        </Button>
+        <Button className="secondary" onClick={() => handleClick(2)}>
+          Button 2
+        </Button>
+      </Form>
     </div>
   );
 }
