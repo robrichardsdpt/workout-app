@@ -1,4 +1,5 @@
 import React from "react";
+import "./FormContainer.styles.scss";
 
 const FormContainer = ({
   children,
@@ -7,8 +8,8 @@ const FormContainer = ({
   children: React.ReactNode;
   title: string;
 }) => (
-  <div>
-    <h2>{title}</h2>
+  <div className="formContainer">
+    <h2 className="formContainer-title">{title}</h2>
     {children}
   </div>
 );
